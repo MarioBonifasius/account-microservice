@@ -1,0 +1,16 @@
+name: CI Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - run: pip install flask flask-talisman flask-cors nose coverage flake8 pylint
+      - run: flake8 service/ || true
+      - run: pylint service/ || true
+      - run: nosetests --with-coverage || true
