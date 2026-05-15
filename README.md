@@ -1,5 +1,5 @@
-# Account Management Microservice
+# DevOps Capstone Project - Account Management Microservice
 
-![CI Build](https://github.com/MarioBonifasius/account-microservice/actions/workflows/ci-build.yaml/badge.svg)
+![CI Build](https://github.com/MarioBonifasius/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 
-Proyek ini untuk memenuhi tugas Coursera.
+Proyek ini adalah microservice untuk manajemen akun dengan CRUD operations, CI/CD, Docker, dan Kubernetes.
